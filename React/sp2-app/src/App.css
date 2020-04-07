@@ -6,5 +6,11 @@
 #login1_div {
   background-color: brown;
   color: yellow;
-  height: 1000px;
+  height: auto;
+}
+
+#login2_div {
+  background-color: brown;
+  color: yellow;
+  height: 2000px;
 }

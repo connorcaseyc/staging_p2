@@ -8,6 +8,7 @@ import { store } from './Store';
 import { history } from './util/history';
 import { Landing } from './components/Landing';
 import { LoginOne } from './components/login-sequence/LoginOne';
+import { LoginTwo } from './components/login-sequence/LoginTwo';
 
 const App: React.FC = () => {
 
@@ -19,6 +20,7 @@ const App: React.FC = () => {
                   <div>
 
                       <Switch>
+                          <Route path="/login2" component={LoginTwo}/>
                           <Route path="/login1" component={LoginOne}/>
                           <Route path="/" component={Landing}/>
                       </Switch>
