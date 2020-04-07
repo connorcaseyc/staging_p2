@@ -10,6 +10,10 @@ export class Landing extends React.Component {
         history.push('/login1');
     }
 
+    openRegisterPage = (event:any) => {
+        history.push('/register');
+    }
+
     render() {
         return (
             <div>
@@ -18,7 +22,8 @@ export class Landing extends React.Component {
                     <br/>
                     <Button outline color="danger" size="sm" onClick={this.nextLoginPage}>Login?</Button>
                     <br/>
-                    <p style={{height:"500px", textAlign:"right"}}>Thanks for coming to our wonderful site</p>                     
+                    <p style={{height:"500px", textAlign:"right"}}>Thanks for coming to our wonderful site</p>
+                    <Button outline color="danger" size="sm" onClick={this.openRegisterPage}>Register</Button>           
                 </div>
             </div>
         )
