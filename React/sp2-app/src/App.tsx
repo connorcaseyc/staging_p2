@@ -10,6 +10,9 @@ import { Landing } from './components/Landing';
 import { LoginOne } from './components/login-sequence/LoginOne';
 import { LoginTwo } from './components/login-sequence/LoginTwo';
 import { Register } from './components/Register';
+import { UpdateUser } from './components/update-user/UpdateUser';
+import { UpdateUsername } from './components/update-user/UpdateUsername';
+import { UpdatePassword } from './components/update-user/UpdatePassword';
 
 const App: React.FC = () => {
 
@@ -21,6 +24,9 @@ const App: React.FC = () => {
                   <div>
 
                       <Switch>
+                          <Route path="/update-password" component={UpdatePassword}/>
+                          <Route path="/update-username" component={UpdateUsername}/>
+                          <Route path="/update" component={UpdateUser}/>
                           <Route path="/login2" component={LoginTwo}/>
                           <Route path="/login1" component={LoginOne}/>
                           <Route path="/register" component={Register}/>
