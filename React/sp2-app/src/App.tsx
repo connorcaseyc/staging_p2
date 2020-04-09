@@ -15,6 +15,7 @@ import { UpdateUsername } from './components/update-user/UpdateUsername';
 import { UpdatePassword } from './components/update-user/UpdatePassword';
 import { LoginThree } from './components/login/login-sequence/LoginThree';
 import { LoginFour } from './components/login/login-sequence/LoginFour';
+import { LandingPage } from "./assets/display-components/LandingPage";
 import LoginFinal from './components/login/login-final/LoginContainer';
 
 const App: React.FC = () => {
@@ -36,6 +37,7 @@ const App: React.FC = () => {
                           <Route path="/login2" component={LoginTwo}/>
                           <Route path="/login1" component={LoginOne}/>
                           <Route path="/register" component={Register}/>
+                          <Route path="/finally" component={LandingPage} />
                           <Route path="/" component={Landing}/>
                       </Switch>
                   
