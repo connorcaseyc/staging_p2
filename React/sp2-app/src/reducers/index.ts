@@ -1,14 +1,13 @@
 import { combineReducers } from 'redux';
 import { loginReducer } from './login-reducer';
-import { IUser } from '../model/IUser';
 
 export interface IUserState {
-    currentUser: IUser,
+    currentUser: any,
     loginMessage: string
 }
 
 export interface IState {
-    userState:IUserState
+    userState: IUserState
 }
 
 export const state = combineReducers<IState>({

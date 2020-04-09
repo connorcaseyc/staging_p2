@@ -1,5 +1,7 @@
 import React, { SyntheticEvent } from 'react';
 import { Input, Form, Button } from 'reactstrap';
+import { publishUser } from '../util/sp2Api';
+import { history } from '../util/history';
 
 interface IRegisterState {
     username: string;
@@ -58,7 +60,16 @@ export class Register extends React.Component<any, IRegisterState> {
 
     submitNewUser = async(event:SyntheticEvent) => {
         event.preventDefault();
-        // api call here
+        publishUser({
+            id: 0,
+            email: this.state.email,
+            username: this.state.username,
+            password: this.state.password,
+            firstname: this.state.firstname,
+            lastname: this.state.lastname
+        });
+        history.push('/');
+
     }
 
 

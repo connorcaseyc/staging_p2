@@ -1,6 +1,4 @@
 import React from 'react';
-import { Button, NavLink } from 'reactstrap';
-import { history } from '../../util/history';
 import { Link } from 'react-router-dom';
 
 export class LoginTwo extends React.Component {

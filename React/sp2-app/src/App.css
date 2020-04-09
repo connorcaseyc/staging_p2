@@ -15,6 +15,25 @@
   height: 2000px;
 }
 
+#login3_div {
+  background-color: brown;
+  color: yellow;
+  height: 2000px;
+  font-size: xx-large;
+}
+
+#login4_div {
+  background-color: brown;
+  color: yellow;
+  height: 3000px;
+}
+
+#loginfinal_div {
+  background-color: brown;
+  color: yellow;
+  height: 3000px;
+}
+
 #register_div {
   background-color: brown;
   color: yellow;
