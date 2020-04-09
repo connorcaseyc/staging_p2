@@ -14,3 +14,25 @@
   color: yellow;
   height: 2000px;
 }
+
+#register_div {
+  background-color: brown;
+  color: yellow;
+  margin:auto;
+  height: 100vh;
+}
+
+#register_form_div {
+  animation: Annoy .5s linear infinite;
+  position: relative;
+  background-color: brown;
+}
+
+@keyframes Annoy {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
