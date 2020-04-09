@@ -1,11 +1,8 @@
 export interface IUser {
     id: number,
-    firstname: string,
-    lastname: string,
+    email: string,
     username: string,
     password: string,
-    email: string,
-    bio: string,
-    profpic: string,
-    user_posts: any[]
+    firstname: string,
+    lastname: string
 }
