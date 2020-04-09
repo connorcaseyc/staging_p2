@@ -7,8 +7,11 @@ export class UpdateUser extends React.Component {
         return ( 
             <div>
                 <div id="update_div">
+                    <br/>
                     <Link to="/update-username">Update Username?</Link>
+                    <br/>
                     <Link to="/update-password">Update Password?</Link>
+                    <br/>
                     <Link to="/">Landing</Link>
                 </div>
             </div>

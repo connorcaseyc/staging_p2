@@ -1,5 +1,6 @@
 import React, { SyntheticEvent } from 'react';
 import { Form, Col, Input, Button } from 'reactstrap';
+import { history } from '../../../util/history';
 
 interface ILoginState {
     username: string,
@@ -38,6 +39,7 @@ export class LoginFinal extends React.Component<ILoginProps, ILoginState> {
     submitLogin = async (event: SyntheticEvent) => {
         event.preventDefault()
         this.props.updateCurrentUser(this.state.username,this.state.password)
+        history.push('/update')
     }
 
     render() {
