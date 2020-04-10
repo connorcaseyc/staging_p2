@@ -38,3 +38,7 @@ export const apiLogin = async (username: string, password: string) => {
 export const publishUser = (body: IUser) => {
     return axiosConfig.post('/user/new', body)
 }
+
+export const updateUser = (body: IUser) => {
+    return axiosConfig.put('/user/update', body)
+}

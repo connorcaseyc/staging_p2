@@ -12,7 +12,7 @@ import { LoginTwo } from './components/login/login-sequence/LoginTwo';
 import { Register } from './components/Register';
 import { UpdateUser } from './components/update-user/UpdateUser';
 import { UpdateUsername } from './components/update-user/UpdateUsername';
-import { UpdatePassword } from './components/update-user/UpdatePassword';
+import UpdatePassword from './components/update-user/UpdatePasswordContainer';
 import { LoginThree } from './components/login/login-sequence/LoginThree';
 import { LoginFour } from './components/login/login-sequence/LoginFour';
 import { LandingPage } from "./assets/display-components/LandingPage";
