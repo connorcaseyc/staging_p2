@@ -43,7 +43,7 @@ export class UpdatePassword extends React.Component<IUpdatePasswordProps, IUpdat
 
     render() {
         return (
-            <div>
+            <div style={{color:'yellow', backgroundColor:'brown', height: '100vh'}}>
                 <div id="updatepw_div">
                     <br/>
                     <h1>Update Password</h1>

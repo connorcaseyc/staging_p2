@@ -18,7 +18,7 @@ export class Landing extends React.Component {
         return (
             <div>
                 <div id="landing_div">
-                    <h1 style={{height:"500px", textAlign:"right"}}>Welcome!!!!!!!!!!!!!!!!!!</h1>
+                    <h1 className="marquee" style={{height:"500px", textAlign:"right"}}>Welcome!!!!!!!!!!!!!!!!!!</h1>
                     <br/>
                     <Button outline color="danger" size="sm" onClick={this.nextLoginPage}>Login?</Button>
                     <br/>
