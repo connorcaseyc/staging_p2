@@ -1,7 +1,5 @@
 import React, { SyntheticEvent } from 'react';
 import { Form, Col, Input, Button } from 'reactstrap';
-import { updateCurrentUser } from '../../../action-mappers/login-actions';
-import { Link } from 'react-router-dom';
 
 interface ILoginState {
   username: string;

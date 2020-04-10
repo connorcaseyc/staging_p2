@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { UpdatePassword } from './UpdatePassword';
+import { UpdateUsername } from './UpdateUsername';
 import { IState } from '../../reducers';
 
 const mapStateToProps = (state: IState) => {
@@ -8,4 +8,4 @@ const mapStateToProps = (state: IState) => {
   };
 };
 
-export default connect(mapStateToProps)(UpdatePassword);
+export default connect(mapStateToProps)(UpdateUsername);

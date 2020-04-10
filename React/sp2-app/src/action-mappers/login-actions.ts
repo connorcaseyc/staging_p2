@@ -18,7 +18,7 @@ export const updateCurrentUser = (username: string, password: string) => async (
         currentUser: response.body,
       },
     });
-    history.push('/finally');
+    history.push('/update');
   } else {
     dispatch({
       type: loginTypes.UNSUCCESSFUL_LOGIN,
