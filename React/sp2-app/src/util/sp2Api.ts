@@ -1,5 +1,6 @@
 import { axiosConfig } from './axiosConfig';
 import { IUser } from '../model/IUser';
+import { IItem } from '../model/IItem';
 
 export const apiLogin = async (username: string, password: string) => {
 
@@ -41,4 +42,8 @@ export const publishUser = (body: IUser) => {
 
 export const updateUser = (body: IUser) => {
     return axiosConfig.put('/user/update', body)
+}
+
+export const getItemId = (body: IItem) => {
+    return axiosConfig.post('/item/id', body)
 }

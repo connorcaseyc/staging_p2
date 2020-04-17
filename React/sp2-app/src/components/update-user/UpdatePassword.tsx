@@ -29,14 +29,23 @@ export class UpdatePassword extends React.Component<IUpdatePasswordProps, IUpdat
 
     updateUserPW = async (event: SyntheticEvent) => {
         event.preventDefault();
+        console.log("before "+this.props.user)
         updateUser({
-            id: this.props.user.id,
+            user_id: this.props.user.user_id,
             email: this.props.user.email,
             username: this.props.user.username,
             password: this.state.password,
             firstname: this.props.user.firstname,
             lastname: this.props.user.lastname
+            // item: this.props.user.item
         })
+        console.log("after "+this.props.user)
+        // history.push('/loginfinal');
+        // this.moveForward();
+    } 
+
+    moveForward = () => {
+        window.location.reload(false);
         history.push('/loginfinal');
     } 
 

@@ -61,12 +61,13 @@ export class Register extends React.Component<any, IRegisterState> {
     submitNewUser = async(event:SyntheticEvent) => {
         event.preventDefault();
         publishUser({
-            id: 0,
+            user_id: 0,
             email: this.state.email,
             username: this.state.username,
             password: this.state.password,
             firstname: this.state.firstname,
             lastname: this.state.lastname
+            // item: []
         });
         history.push('/');
 

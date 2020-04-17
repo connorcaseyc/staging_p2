@@ -5,7 +5,7 @@ import { history } from '../../util/history';
 import { Form, Input, Button } from 'reactstrap';
 
 interface IUpdateUsernameProps {
-    user: any;
+    user: any
 }
 
 interface IUpdateUsernameState {
@@ -30,14 +30,21 @@ export class UpdateUsername extends React.Component<IUpdateUsernameProps, IUpdat
     updateUserUN = async (event: SyntheticEvent) => {
         event.preventDefault();
         updateUser({
-            id: this.props.user.id,
+            user_id: this.props.user.user_id,
             email: this.props.user.email,
             username: this.state.username,
             password: this.props.user.password,
             firstname: this.props.user.firstname,
             lastname: this.props.user.lastname
+            // item: this.props.user.item 
         })
+        // history.push('/loginfinal');
+        // this.moveForward();
+    } 
+
+    moveForward = () => {
         history.push('/loginfinal');
+        window.location.reload(false);
     } 
 
     render() {

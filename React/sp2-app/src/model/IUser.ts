@@ -1,8 +1,9 @@
 export interface IUser {
-    id: number,
+    user_id: number,
     email: string,
     username: string,
     password: string,
     firstname: string,
     lastname: string
+    // item: any[]
 }
