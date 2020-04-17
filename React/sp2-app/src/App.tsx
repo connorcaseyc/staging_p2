@@ -11,11 +11,12 @@ import { LoginOne } from './components/login/login-sequence/LoginOne';
 import { LoginTwo } from './components/login/login-sequence/LoginTwo';
 import { Register } from './components/Register';
 import { UpdateUser } from './components/update-user/UpdateUser';
-import { UpdateUsername } from './components/update-user/UpdateUsername';
+import UpdateUsername from './components/update-user/UpdateUsernameContainer';
 import UpdatePassword from './components/update-user/UpdatePasswordContainer';
 import { LoginThree } from './components/login/login-sequence/LoginThree';
 import { LoginFour } from './components/login/login-sequence/LoginFour';
 import LoginFinal from './components/login/login-final/LoginContainer';
+import LoginCheck from './components/login/login-check/LoginCheckContainer';
 
 const App: React.FC = () => {
 
@@ -30,6 +31,7 @@ const App: React.FC = () => {
                           <Route path="/update-password" component={UpdatePassword}/>
                           <Route path="/update-username" component={UpdateUsername}/>
                           <Route path="/update" component={UpdateUser}/>
+                          <Route path="/check" component={LoginCheck}/>
                           <Route path="/loginfinal" component={LoginFinal}/>
                           <Route path="/login4" component={LoginFour}/>
                           <Route path="/login3" component={LoginThree}/>

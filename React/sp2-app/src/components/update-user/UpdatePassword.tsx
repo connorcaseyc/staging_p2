@@ -37,7 +37,6 @@ export class UpdatePassword extends React.Component<IUpdatePasswordProps, IUpdat
             firstname: this.props.user.firstname,
             lastname: this.props.user.lastname
         })
-        window.location.reload(false);
         history.push('/loginfinal');
     } 
 

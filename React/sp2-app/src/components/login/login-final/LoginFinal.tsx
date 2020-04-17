@@ -39,8 +39,16 @@ export class LoginFinal extends React.Component<ILoginProps, ILoginState> {
     submitLogin = async (event: SyntheticEvent) => {
         event.preventDefault()
         this.props.updateCurrentUser(this.state.username,this.state.password)
-        history.push('/update')
+        // if(this.props.loginMessage==loginTypes.SUCCESSFUL_LOGIN) {
+        //     console.log('look here');
+        // }
+        
+        history.push('/check')
     }
+
+    // check = async (event: SyntheticEvent) => {
+    //     console.log(this.props.loginMessage+"look here")
+    // }
 
     render() {
         return (
@@ -64,6 +72,7 @@ export class LoginFinal extends React.Component<ILoginProps, ILoginState> {
                         </Col>
                         <Button outline color="danger" size="sm">Login?</Button> 
                     </Form>
+                    <p>{this.props.loginMessage}</p>
                 </div>
             </div>
         )

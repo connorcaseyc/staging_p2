@@ -55,3 +55,21 @@
     bottom: 20px;
   }
 }
+
+#logincheck_div {
+  background-color: brown;
+  color: yellow;
+  margin: auto;
+}
+
+#updateun_div {
+  background-color: brown;
+  color: yellow;
+  margin: auto;
+}
+
+#updatepw_div {
+  background-color: brown;
+  color: yellow;
+  margin: auto;
+}
